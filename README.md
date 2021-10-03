@@ -1,2 +1,2 @@
-# My-Portfolio
-A simple portfolio that I will be happy to let you use. If you have any comments let me know, thank you.
+# Medy-Faycal-Porgo
+A simple portfolio, I'm happy to let you use it.
