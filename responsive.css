@@ -60,3 +60,90 @@
     margin-left: 0px;
   }
 }
+
+@media screen and (max-width: 870px){
+  .description-box{
+    margin-left: 95px;
+  }
+  .logo{
+    padding-left: 50px;
+  }
+}
+@media screen and (max-width: 704px) {
+  .presentation{
+    font-size: 35px;
+  }
+  .description{
+    font-size: 14px;
+  }
+  h3,
+  .mail-address {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 620px){
+    .presentation {
+      font-size: 25px;
+    }
+
+    .description {
+      font-size: 12px;
+    }
+
+    h3,
+    .mail-address {
+      font-size: 15px;
+    }
+}
+@media  screen and (max-width: 600px) {
+  .number-and-mail-address{
+    flex-direction: column;
+  }
+  .mail-address{
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 822px){
+  .form__block{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .form__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form__textarea {
+    width: 395px;
+    height: 180px;
+  }
+  .form__title{
+    margin-bottom: 1rem;
+  }
+  .form{
+    width: 450px;
+    height: 480px;
+  }
+  .form__left {
+    width: 100%;
+  }
+
+  .form__right {
+    width: 100%;
+  }
+  .form__button{
+    margin-top: 18px;
+  }
+}
+@media screen and (max-width: 470px){
+  .form{
+    width: 390px;
+  }
+}
+@media screen and (max-width: 411px){
+      .form {
+        width: 340px;
+      }
+}

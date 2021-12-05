@@ -9,10 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="fullpage.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="responsive.css">
     <script type="text/javascript" src="gsap.min.js"></script>
-
   </head>
   <body>
     <header class="header">
@@ -20,17 +19,24 @@
         <h2 class="logo">Medy</h2>
       </a>
 
-      <ul class="nav">
-        <li><a class="link-btn" href="#">About me</a></li>
-        <li><a class="link-btn" href="#">Inspirations</a></li>
-        <li><a class="link-btn" href="#">Projects</a></li>
-        <li><a class="link-btn" href="#">Contact me</a></li>
+      <ul class="nav" id="nav">
+        <li data-menuanchor="About" class="active">
+          <a class="link-btn" href="#About">About me</a>
+        </li>
+        <li data-menuanchor="Inspirations" class="active">
+          <a class="link-btn" href="#Inspirations">Inspirations</a>
+        </li>
+        <li data-menuanchor="Projects" class="active">
+          <a class="link-btn" href="#Projects">Projects</a>
+        </li>
+        <li data-menuanchor="Contact" class="active">
+          <a class="link-btn" href="#Contact">Contact me</a>
+        </li>
       </ul>
 
       <div class="nav-toggle" id="nav-toggle" onclick="Nav()" >
         <svg width="35px" height="35px" fill="#fff" viewBox="0 0 24 24"><path d="M21 13H3c-.6 0-1-.4-1-1s.4-1 1-1h18c.6 0 1 .4 1 1s-.4 1-1 1zm0-8H3c-.6 0-1-.4-1-1s.4-1 1-1h18c.6 0 1 .4 1 1s-.4 1-1 1zm0 16H3c-.6 0-1-.4-1-1s.4-1 1-1h18c.6 0 1 .4 1 1s-.4 1-1 1z"></path></svg>
       </div>
-
 
     </header>
 
@@ -44,13 +50,13 @@
           <a href="#">Contact</a>
         </div>
 
-        <div class="social-media">
-          <div class="media-icon"><a href="https://twitter.com/PorgoMedy"><i class="ri-twitter-line"></i></a></div>
-          <div class="media-icon"><a href="https://www.instagram.com/medy_osef/"><i class="ri-instagram-line"></i></a></div>
-          <div class="media-icon"><a href="https://www.facebook.com/medy.porgo"><i class="ri-facebook-circle-line"></i></a></div>
-          <div class="media-icon"><a href="https://github.com/MedyOsef"><i class="ri-github-line"></i></a></div>
+       <!--  <div class="social-media">
+          <div class="media-icon"><a href="https://twitter.com/PorgoMedy" target="_blank"><i class="ri-twitter-line"></i></a></div>
+          <div class="media-icon"><a href="https://www.instagram.com/medy_osef/" target="_blank"><i class="ri-instagram-line"></i></a></div>
+          <div class="media-icon"><a href="https://www.facebook.com/medy.porgo" target="_blank"><i class="ri-facebook-circle-line"></i></a></div>
+          <div class="media-icon"><a href="https://github.com/MedyOsef" target="_blank"><i class="ri-github-line"></i></a></div>
           <div class="media-icon special"><i class="ri-telegram-line" onclick="showTelegramNumber();"></i></div>
-        </div>
+        </div> -->
 
         <div class="description-box">
           <h1 class="presentation"><span class="n"> Hi, I'm</span> <span class="n color">Medy</span> <span class="n color">Fayçal</span> <span class="n color">Porgo</span></h1>
@@ -63,13 +69,39 @@
           <div class="contact-btn-box">
             <a class="contact-btn" href="#">Contact me</a>
           </div>
+          <div class=scrol_down_indication>
+            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.75735 5.63605L6.34314 7.05026L12 12.7071L17.6569 7.05029L16.2427 5.63608L12 9.87872L7.75735 5.63605Z" fill="currentColor"/><path d="M6.34314 12.7071L7.75735 11.2929L12 15.5356L16.2427 11.2929L17.6569 12.7071L12 18.364L6.34314 12.7071Z" fill="currentColor"/>
+          </div>
+
+        <div class="social-media">
+          <div class="media-icon"><a href="https://twitter.com/PorgoMedy" target="_blank"><i class="ri-twitter-line"></i></a></div>
+          <div class="media-icon"><a href="https://www.instagram.com/medy_osef/" target="_blank"><i class="ri-instagram-line"></i></a></div>
+          <div class="media-icon"><a href="https://www.facebook.com/medy.porgo" target="_blank"><i class="ri-facebook-circle-line"></i></a></div>
+          <div class="media-icon"><a href="https://github.com/MedyOsef" target="_blank"><i class="ri-github-line"></i></a></div>
+          <div class="media-icon special"><i class="ri-telegram-line" onclick="showTelegramNumber();"></i></div>
+        </div>
+
         </div>
 
       </div>
 
       <div class="section s2">
         <!--h1>the seconde section</h1-->
-          <form action="" class="form">
+        <h1 class="word">My Inspiration</h1>
+         
+      </div>
+      
+      <div section class="section s3">
+        <div class="my-projects">
+          <a href="#"><p>Project 1</p><img src="my-projects-img/Capture d’écran 2021-10-31 à 19.12.37.png" alt=""></a>
+          <a href="#"><p>Project 2</p><img src="my-projects-img/Capture d’écran 2021-10-31 à 19.12.37.png" alt=""></a>
+          <a href="#"><p>Project 3</p><img src="my-projects-img/Capture d’écran 2021-10-31 à 19.12.37.png" alt=""></a>
+          <a href="#"><p>Project 4</p><img src="my-projects-img/Capture d’écran 2021-10-31 à 19.12.37.png" alt=""></a>
+        </div>
+      </div>
+
+      <div class="section s4">
+         <form action="" class="form">
                 <h1 class="form__title">contact me</h1> 
 
               <div class="form__block">
@@ -79,10 +111,10 @@
                         <label for="" class="form__label">Your name</label>
                     </div>
 
-                    <div class="form__div">
+                    <!-- <div class="form__div">
                         <input type="text" class="form__input" placeholder=" ">
                         <label for="" class="form__label">Phone number</label>
-                    </div>
+                    </div> -->
 
                     <div class="form__div">
                         <input type="password" class="form__input" placeholder=" ">
@@ -91,18 +123,12 @@
                 </div>
 
                 <div class="form__right">
-                  <textarea class="form__textarea" name=""></textarea>
+                  <textarea class="form__textarea" name="" placeholder="type your message Here ..."></textarea>
                 </div>
               </div>
                 
-            
-
-                <input type="submit" class="form__button" value="Sign In">
+                <input type="submit" class="form__button" value="send">
           </form>
-      </div>
-
-      <div class="section s3">
-        <h1 class="word">the third section</h1>
       </div>
     </div>
 
