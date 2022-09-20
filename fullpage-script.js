@@ -7,7 +7,7 @@ new fullpage('#fullpage', {
     easingcss3: 'ease-out',
     loopBottom: false,
     navigation: false,
-    menu: '#nav',
+    menu: '#mySidenav',
     anchors: ['About', 'Inspirations', 'Projects', 'Contact'],
     navigationTooltips: ['About me', 'Inspirations', 'Projects', 'Contact me'],
     showActiveTooltip: false,

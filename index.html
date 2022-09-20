@@ -14,12 +14,13 @@
     <script type="text/javascript" src="gsap.min.js"></script>
   </head>
   <body>
-    <header class="header">
-      <a class="logo-link" href="#">
+    <header class="Header">
+      <a class="logo-link" href="index.html">
         <h2 class="logo">Medy</h2>
       </a>
 
-      <ul class="nav" id="nav">
+      <ul class="nav active" id="mySidenav">
+        <div class="triangle"></div>
         <li data-menuanchor="About" class="active">
           <a class="link-btn" href="#About">About me</a>
         </li>
@@ -43,21 +44,6 @@
     <div id="fullpage">
       <div class="section s1">
 
-        <div id="mySidenav" class="sidenav">
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Clients</a>
-          <a href="#">Contact</a>
-        </div>
-
-       <!--  <div class="social-media">
-          <div class="media-icon"><a href="https://twitter.com/PorgoMedy" target="_blank"><i class="ri-twitter-line"></i></a></div>
-          <div class="media-icon"><a href="https://www.instagram.com/medy_osef/" target="_blank"><i class="ri-instagram-line"></i></a></div>
-          <div class="media-icon"><a href="https://www.facebook.com/medy.porgo" target="_blank"><i class="ri-facebook-circle-line"></i></a></div>
-          <div class="media-icon"><a href="https://github.com/MedyOsef" target="_blank"><i class="ri-github-line"></i></a></div>
-          <div class="media-icon special"><i class="ri-telegram-line" onclick="showTelegramNumber();"></i></div>
-        </div> -->
-
         <div class="description-box">
           <h1 class="presentation"><span class="n"> Hi, I'm</span> <span class="n color">Medy</span> <span class="n color">Fayçal</span> <span class="n color">Porgo</span></h1>
           <h3>Student in security and computer networks.</h3>
@@ -67,7 +53,7 @@
             <p class="mail-address"><i class="ri-mail-line"></i><span class="mail">porgomedy@protonmail.com</span></p>
           </div>
           <div class="contact-btn-box">
-            <a class="contact-btn" href="#">Contact me</a>
+            <a class="contact-btn" href="#Contact">Contact me</a>
           </div>
           <div class=scrol_down_indication>
             <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.75735 5.63605L6.34314 7.05026L12 12.7071L17.6569 7.05029L16.2427 5.63608L12 9.87872L7.75735 5.63605Z" fill="currentColor"/><path d="M6.34314 12.7071L7.75735 11.2929L12 15.5356L16.2427 11.2929L17.6569 12.7071L12 18.364L6.34314 12.7071Z" fill="currentColor"/>
@@ -117,7 +103,7 @@
                     </div> -->
 
                     <div class="form__div">
-                        <input type="password" class="form__input" placeholder=" ">
+                        <input type="email" class="form__input" placeholder=" ">
                         <label for="" class="form__label">Email</label>
                     </div>
                 </div>

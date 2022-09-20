@@ -8,18 +8,16 @@ function showTelegramNumber(){
 
 /* a simple fonction to on and off*/
 function Nav(){
-let mySidenav = document.getElementById("mySidenav");
-let logo_link = document.querySelector('.logo-link');
-
-if (mySidenav.style.width != "65%"){
-  logo_link.style.visibility = "hidden";
-  mySidenav.style.width = "65%";
-  }
-else if (mySidenav.style.width != "0"){
-    mySidenav.style.width = "0";
-    logo_link.style.visibility = "visible";
+  const mySidenav = document.querySelector("#mySidenav");
+  if (mySidenav.style.visibility == "visible"){
+    mySidenav.style.visibility ="hidden"
+    }else{
+    mySidenav.style.visibility ="visible"
   }
 }
+
+
+
 /******************* green sukk*****************************/
 const nameSpans = document.querySelectorAll('.n');
 const contact_btn = document.querySelector('.contact-btn');
@@ -45,27 +43,3 @@ window.addEventListener('load', () => {
 
   TL.play();
 })
-/****************** swap to close menu***************** */
-const mySidenav = document.getElementById("mySidenav");
-const toggle = document.querySelector('.nav-toggle');
-
-let touchStart, touchEnd;
-let logo_link = document.querySelector('.logo-link');
-
-// TouchStart
-mySidenav.addEventListener('touchstart', e => {
-  touchStart = e.targetTouches[0].clientX;
-});
-
-// TouchMove
-mySidenav.addEventListener('touchmove', e => {
-  touchEnd = e.targetTouches[0].clientX;
-});
-
-// Distance ?
-mySidenav.addEventListener('touchend', e => {
-  if(touchStart - touchEnd > 65){
-    mySidenav.style.width = "0";
-    logo_link.style.visibility = "visible";
-  }
-});

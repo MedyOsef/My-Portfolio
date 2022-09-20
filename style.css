@@ -4,7 +4,9 @@
   font-family: 'Rampart One';
   src: url('RampartOne-Regular.ttf') format('truetype');
 }
-
+*{
+  user-select: none;
+}
 *,::before,::after {
   margin: 0;
   padding: 0;
@@ -28,15 +30,17 @@ body {
   overflow: hidden;
 }
 
-.header {
+.Header {
   width: 100%;
-  height: 120px;
+  height: 60px;
   position: fixed;
   z-index: 99;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   padding: 20px 0;
+  background-color: #010101;
 }
 
 .nav-toggle {
@@ -62,7 +66,7 @@ body {
   opacity: .9;
 }
 
-.header ul {
+.Header ul {
   list-style: none;
   display: flex;
   height: 45px;
@@ -79,12 +83,14 @@ body {
 
 .link-btn {
   padding: 8px 10px;
+  border-radius: 4px;
 }
 
 li:hover .link-btn{
   transition: all .4s ease-in-out;
   color: #333;
   background: #fff;
+  
 }
 li.active .link-btn {
   color: #333;
@@ -150,6 +156,9 @@ p {
   bottom: -4px;
   font-size: 25px;
 }
+.triangle{
+  display: none;
+}
 
 /*******************************fullpage**************************/
 .s1 {
@@ -212,6 +221,7 @@ p {
   padding: 10px 8px;
   margin-top: 200px;
   font-weight: 400;
+  border-radius: 5px;
 }
 
 .contact-btn:hover {
@@ -263,4 +273,9 @@ p {
   25%{transform: translateY(0)}
   100%{transform: translateY(20px)}
 
+}
+/******** Anim header ******/
+.anim-hearder{
+  background-color: #2e685a;
+  border: 1px solid #2e685a;
 }

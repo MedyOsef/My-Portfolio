@@ -32,14 +32,44 @@
 }
 
 @media screen and (max-width: 650px) {
-  .nav li{
+  /* .nav li{
     display: none;
+  } */
+  .triangle{
+    display: block;
+    position: absolute;
+    border-top: transparent 15px solid;
+    border-right: #2e685a 15px solid;
+    border-bottom: #2e685a 15px solid;
+    border-left: transparent 15px solid;
+    top: -30px;
+    right: 0;
+  }
+  #mySidenav{
+    position: absolute;
+    display: flex;
+    background-color: #2e685a;
+    flex-direction: column;
+    height: 350px;
+    width: 285px;
+    top: 100px;
+    right: -20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-top-right-radius: 0px;
+    visibility: hidden;
   }
   .nav-toggle{
     display: block;
+    position: relative;
   }
 
- 
+  li.active .link-btn {
+   transition: none;
+  }
+  .link-btn {
+      padding: 14px 30px;
+  }
   .logo{
     font-size: 22px;
   }
